@@ -1,0 +1,387 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <form id="nba-edit" #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="row">
+ 
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Full Name</label>
+          <input
+            type="text"
+            id="nbaFULL_NAME"
+            name="FULL_NAME"
+            [ngModel]="nba?.FULL_NAME"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Team</label>
+          <input
+            type="text"
+            id="nbaTEAM"
+            name="TEAM"
+            [ngModel]="nba?.TEAM"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Position</label>
+          <input
+            type="text"
+            id="nbaPOS"
+            name="POS"
+            [ngModel]="nba?.POS"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Age</label>
+          <input
+            type="text"
+            id="nbaAGE"
+            name="AGE"
+            [ngModel]="nba?.AGE"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Games Played</label>
+          <input
+            type="text"
+            id="nbaGP"
+            name="GP"
+            [ngModel]="nba?.GP"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Minutes Per Game</label>
+          <input
+            type="text"
+            id="nbaMPG"
+            name="MPG"
+            [ngModel]="nba?.MPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Minutes Percentage</label>
+          <input
+            type="text"
+            id="nbaMINPerc"
+            name="MINPerc"
+            [ngModel]="nba?.MINPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Usage Percentage</label>
+          <input
+            type="text"
+            id="nbaUSGPerc"
+            name="USGPerc"
+            [ngModel]="nba?.USGPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Turn Over Percentage</label>
+          <input
+            type="text"
+            id="nbaTOPerc"
+            name="TOPerc"
+            [ngModel]="nba?.TOPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Free Throws Attempted</label>
+          <input
+            type="text"
+            id="nbaFTA"
+            name="FTA"
+            [ngModel]="nba?.FTA"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Free Throw Percentage</label>
+          <input
+            type="text"
+            id="nbaFTPerc"
+            name="FTPerc"
+            [ngModel]="nba?.FTPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">2 Points Attempted</label>
+          <input
+            type="text"
+            id="nbaTwoPA"
+            name="TwoPA"
+            [ngModel]="nba?.TwoPA"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">2 Point Percentage</label>
+          <input
+            type="text"
+            id="nbaTwoPPerc"
+            name="TwoPPerc"
+            [ngModel]="nba?.TwoPPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">3 Points Attempted</label>
+          <input
+            type="text"
+            id="nbaThreePA"
+            name="ThreePA"
+            [ngModel]="nba?.ThreePA"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">3 Point Percentage</label>
+          <input
+            type="text"
+            id="nbaThreePPerc"
+            name="ThreePPerc"
+            [ngModel]="nba?.ThreePPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Effective Field Goal Percentage</label>
+          <input
+            type="text"
+            id="nbaeFGPerc"
+            name="eFGPerc"
+            [ngModel]="nba?.eFGPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+        <label for="nbaUrl">TS Percentage</label>
+          <input
+            type="text"
+            id="nbaTSPerc"
+            name="TSPerc"
+            [ngModel]="nba?.TSPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Points Per Game</label>
+          <input
+            type="text"
+            id="nbaPPG"
+            name="PPG"
+            [ngModel]="nba?.PPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Rebouns Per Game</label>
+          <input
+            type="text"
+            id="nbaRPG"
+            name="RPG"
+            [ngModel]="nba?.RPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Total Rebounds Percentage</label>
+          <input
+            type="text"
+            id="nbaTRBPerc"
+            name="TRBPerc"
+            [ngModel]="nba?.TRBPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Assists Per Game</label>
+          <input
+            type="text"
+            id="nbaAPG"
+            name="APG"
+            [ngModel]="nba?.APG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Assists Percentage</label>
+          <input
+            type="text"
+            id="nbaASTPerc"
+            name="ASTPerc"
+            [ngModel]="nba?.ASTPerc"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Steals Per Game</label>
+          <input
+            type="text"
+            id="nbaSPG"
+            name="SPG"
+            [ngModel]="nba?.SPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Blocks Per Game</label>
+          <input
+            type="text"
+            id="nbaBPG"
+            name="BPG"
+            [ngModel]="nba?.BPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Turn Overs Per Game</label>
+          <input
+            type="text"
+            id="nbaTOPG"
+            name="TOPG"
+            [ngModel]="nba?.TOPG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Vi Versitility</label>
+          <input
+            type="text"
+            id="nbaVIVersatility"
+            name="VIVersatility"
+            [ngModel]="nba?.VIVersatility"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Offensive Rating</label>
+          <input
+            type="text"
+            id="nbaORTG"
+            name="ORTG"
+            [ngModel]="nba?.ORTG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+
+        <div class="col-sm-12 form-group">
+          <label for="nbaUrl">Defensive Rating</label>
+          <input
+            type="text"
+            id="nbaDRTG"
+            name="DRTG"
+            [ngModel]="nba?.DRTG"
+            class="form-control"
+            size="150"
+            max="255"
+            required>
+        </div>
+        
+      </div>
+
+      <div *ngIf="!f.valid" class="alert alert-danger">
+        The Nba title and URL are required fields.
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success" type="submit" [disabled]="!f.valid">Save</button>
+          <button class="btn btn-primary" type="button" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,129 @@
+<div class="panel panel-default" xmlns="http://www.w3.org/1999/html">
+  <div class="panel-heading">
+    <div class="row pad-all">
+      <h4 class="title margin-left-right">{{nbas.FULL_NAME}}</h4>
+      <div class="row pull-right margin-left-right">
+        <a class="btn btn-primary" (click)="onView()">View</a>
+        <a class="btn btn-info" [routerLink]="['edit']" routerLinkActive="active">Edit</a>
+        <a class="btn btn-danger"  (click)="onDelete()">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="pad-left-right">
+      <div class="row">
+        <label>Full Name:</label>
+        <span class="label-value"> {{nbas.FULL_NAME}}</span>
+      </div>
+      <br>
+      <div class="row">
+        <label>Team:</label>
+        <span class="label-value"> {{nbas.TEAM}}</span>
+      </div>
+      <div class="row">
+        <label>Position:</label>
+        <span class="label-value"> {{nbas.POS}}</span>
+      </div>
+      <div class="row">
+        <label>Age:</label>
+        <span class="label-value"> {{nbas.AGE}}</span>
+      </div>
+      <div class="row">
+        <label>Games Played:</label>
+        <span class="label-value"> {{nbas.GP}}</span>
+      </div>
+      <div class="row">
+        <label>Minutes Per Game:</label>
+        <span class="label-value"> {{nbas.MPG}}</span>
+      </div>
+      <div class="row">
+        <label>Minute Percentage:</label>
+        <span class="label-value"> {{nbas.MINPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Usage Percentage:</label>
+        <span class="label-value"> {{nbas.USGPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Turnover Percentage:</label>
+        <span class="label-value"> {{nbas.TOPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Freethrows Attempted:</label>
+        <span class="label-value"> {{nbas.FTA}}</span>
+      </div>
+      <div class="row">
+        <label>Freethrow Percentage:</label>
+        <span class="label-value"> {{nbas.FTPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Two Pointers Attempted:</label>
+        <span class="label-value"> {{nbas.TwoPA}}</span>
+      </div>
+      <div class="row">
+        <label>Two Point Percentage:</label>
+        <span class="label-value"> {{nbas.TwoPPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Three Pointers Attempted:</label>
+        <span class="label-value"> {{nbas.ThreePA}}</span>
+      </div>
+      <div class="row">
+        <label>Three Point Percentage:</label>
+        <span class="label-value"> {{nbas.ThreePPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Effective field goal percentage:</label>
+        <span class="label-value"> {{nbas.eFGPerc}}</span>
+      </div>
+      <div class="row">
+        <label>TSPerc:</label>
+        <span class="label-value"> {{nbas.TSPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Points Per Game:</label>
+        <span class="label-value"> {{nbas.PPG}}</span>
+      </div>
+      <div class="row">
+        <label>Rebounds Per Game:</label>
+        <span class="label-value"> {{nbas.RPG}}</span>
+      </div>
+      <div class="row">
+        <label>Total Rebound Percentage:</label>
+        <span class="label-value"> {{nbas.TRBPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Assists Per Game:</label>
+        <span class="label-value"> {{nbas.APG}}</span>
+      </div>
+      <div class="row">
+        <label>Assists Percentage:</label>
+        <span class="label-value"> {{nbas.ASTPerc}}</span>
+      </div>
+      <div class="row">
+        <label>Steals Per Game:</label>
+        <span class="label-value"> {{nbas.SPG}}</span>
+      </div>
+      <div class="row">
+        <label>Blocks Per Game:</label>
+        <span class="label-value"> {{nbas.BPG}}</span>
+      </div>
+      <div class="row">
+        <label>Turn Overs Per Game:</label>
+        <span class="label-value"> {{nbas.TOPG}}</span>
+      </div>
+      <div class="row">
+        <label>VI Versitility:</label>
+        <span class="label-value"> {{nbas.VIVersatility}}</span>
+      </div>
+      <div class="row">
+        <label>Offensive Rating:</label>
+        <span class="label-value"> {{nbas.ORTG}}</span>
+      </div>
+      <div class="row">
+        <label>Defensive Rating:</label>
+        <span class="label-value"> {{nbas.DRTG}}</span>
+      </div>
+    </div>
+  </div>
+</div>

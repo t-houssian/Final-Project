@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row pad-left-right">
+      <span class="pull-left title">Nba Players</span>
+      <a class="btn btn-success pull-right" [routerLink]="['new']">Add Nba Player</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="center-panel">
+      <cms-nba-item *ngFor="let nba of nbas" [nbas]="nba"
+      ></cms-nba-item>
+    </div>
+  </div>
+</div>

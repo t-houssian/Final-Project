@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row pad-left-right text-center">
+      <span class="title">Nba Teams</span>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="center-panel">
+      <cms-team-item *ngFor="let team of teams" [teams]="team"
+      ></cms-team-item>
+    </div>
+  </div>
+</div>
